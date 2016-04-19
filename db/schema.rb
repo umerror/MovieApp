@@ -37,5 +37,7 @@ ActiveRecord::Schema.define(version: 20160413103300) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+   add_index "parts", ["actor_id"], name: "index_parts_on_actor_id"
+   add_index "parts", ["movie_id"], name: "index_parts_on_movie_id"
 
 end
